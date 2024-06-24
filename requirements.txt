@@ -5,3 +5,4 @@ geopandas==0.14.3
 pandas==2.2.1
 dash-tools
 pyogrio
+dash_leaflet
