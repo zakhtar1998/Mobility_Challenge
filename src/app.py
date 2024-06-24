@@ -23,10 +23,6 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, 'https://f
 file_path = './src/data/updated_mobility_data.csv'
 combined_data = pd.read_csv(file_path)
 
-# Load the admin2 boundaries GeoJSON file
-admin2_boundaries_path = './src/data/india_aoi_adm2.geojson'
-admin2_boundaries = gpd.read_file(admin2_boundaries_path)
-
 # Convert 'Day' and 'Hours' to datetime and create a new column for filtering
 combined_data['DateTime'] = pd.to_datetime(combined_data['Day'] + ' ' + combined_data['Hours'], format='%B %d, %Y %H:%M')
 
