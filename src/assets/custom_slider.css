@@ -1,0 +1,7 @@
+.rc-slider-track {
+  background-color: transparent !important;  /* Hide the track line */
+}
+
+.rc-slider-handle {
+  border-color: blue !important;  /* Style for the handle if needed */
+}
